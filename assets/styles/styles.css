@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "NetflixSans-Bold";
+  src: url("../font/NetflixSans_W_Bd.woff2") format("woff2");
+}
+@font-face {
+  font-family: "NetflixSans-Black";
+  src: url("../font/NetflixSans_W_Blk.woff2") format("woff2");
+}
+@font-face {
+  font-family: "NetflixSans-Medium";
+  src: url("../font/NetflixSans_W_Md.woff2") format("woff2");
+}
+@font-face {
+  font-family: "NetflixSans";
+  src: url("../font/NetflixSans_W_Rg.woff2") format("woff2");
+}
+body {
+  font-family: "NetflixSans";
+  background-color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/BR-pt-20230410-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+}
+.container #bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  background: rgb(20, 246, 80);
+  background: linear-gradient(90deg, rgb(20, 246, 80) 0%, rgb(9, 9, 9) 0%, rgba(11, 11, 11, 0) 100%);
+}
+.container a {
+  color: white;
+  text-decoration: none;
+}
+.container .infos {
+  color: white;
+  display: flex;
+  gap: 2em;
+  z-index: 1;
+  flex-direction: column;
+}
+.container .infos .form input {
+  margin-top: 2em;
+  height: 3em;
+  font-size: 0.9em;
+  padding: 0.7em;
+  outline: none;
+  color: white;
+  border-radius: 0.3em;
+  border: 0.1em solid rgba(80, 79, 79, 0.419);
+  background-color: rgba(0, 0, 0, 0.325);
+}
+.container .infos .form button {
+  height: 3em;
+  padding: 0.7em;
+  font-size: 0.8em;
+  color: white;
+  border: none;
+  background-color: red;
+  border-radius: 0.3em;
+}
+.container .infos .form button:hover {
+  background-color: rgb(190, 3, 3);
+}
+.container .infos h2 {
+  font-family: "NetflixSans-Black";
+  font-size: 4.5em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+.header .logo {
+  filter: saturate(150%);
+  width: 12em;
+}
+.header .entrar {
+  margin-right: 3em;
+  background-color: red;
+  font-size: 1em;
+  color: white;
+  width: 5em;
+  height: 2em;
+  border: none;
+  border-radius: 0.2em;
+}
+.header .entrar:hover {
+  background-color: rgb(190, 3, 3);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  flex-direction: row;
+  gap: 10em;
+  height: 70vh;
+  color: white;
+  background-color: black;
+}
+.content .text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
+}
+.content .text h2 {
+  font-size: 3em;
+  font-family: "NetflixSans-Black";
+}
+.content .tv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .tv .background-tv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .tv .background-tv .video-tv video {
+  width: 30em;
+}
+.content .tv .background-tv .video-pc video {
+  width: 25em;
+  margin-bottom: 10em;
+}
+.content .tv .background-tv img {
+  position: absolute;
+  width: 40em;
+}
+
+@media screen and (max-width: 1200px) {
+  #pc {
+    flex-direction: column-reverse;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .infos {
+    padding: 2em;
+    width: 100%;
+  }
+  .container .infos h2 {
+    font-size: 2em;
+  }
+  .content {
+    gap: 3em;
+    flex-direction: column;
+  }
+  .content .tv .background-tv img {
+    width: 35em;
+  }
+  .content .tv .background-tv .video-pc video {
+    width: 22em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .content .tv .background-tv img {
+    width: 30em;
+  }
+  .content .tv .background-tv .video-pc video {
+    width: 19em;
+    margin-bottom: 8em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content {
+    text-align: center;
+    height: 60vh;
+  }
+  .content .text {
+    text-align: center;
+  }
+  .content .text h2 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 528px) {
+  .content .tv .background-tv img {
+    width: 100%;
+  }
+  .content .tv .background-tv .video-tv video {
+    width: 100%;
+  }
+  .content .tv .background-tv .video-pc video {
+    width: 75%;
+    margin-bottom: 5em;
+  }
+}/*# sourceMappingURL=styles.css.map */

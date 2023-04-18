@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Início - Netflix</title>
+    <link rel="stylesheet" href="assets/styles/browse.css">
+    <link rel="shortcut icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico">
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/276f9ca786.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="choose">
+            <h2>Quem está assistindo?</h2>
+            <div class="perfis">
+                <button onclick="choose()" class="perfil">
+                    <img src="https://occ-0-7433-3852.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTqCB8uh6vUUpjPnmHk3iGyky27lLiL16NEFLBfZ4Kdaf9n0lOJFHM72muckX62W7XgI7MGhWwu9ki-vHV_hUJ2odJOr1CN1A_JI.png?r=962">
+                    <p>Mateus Teruki</p>
+                </button>
+            </div>
+            <button class="gerenciar">Gerenciar perfis</button>
+    </div>
+    
+    <header>
+        <a href="/index.html"><img class="logo" src="assets/img/Netflix_Logo_PMS.png"></a>
+        <div class="nav-list">
+            <ul>
+                <li><a class="nav-item" href="#" class="active">Início</a></li>
+                <li><a class="nav-item" href="#">Séries</a></li>
+                <li><a class="nav-item" href="#">Filmes</a></li>
+                <li><a class="nav-item" href="#">Bombando</a></li>
+                <li><a class="nav-item" href="#">Minha lista</a></li>
+                <li><a  class="nav-item" href="#">Navegar por Idiomas</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon1" src="assets/img/menu_white_36dp.svg" alt=""></button>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <ul>
+            <li><a class="nav-item" href="#" class="active">Início</a></li>
+            <li><a class="nav-item" href="#">Séries</a></li>
+            <li><a class="nav-item" href="#">Filmes</a></li>
+            <li><a class="nav-item" href="#">Bombando</a></li>
+            <li><a class="nav-item" href="#">Minha lista</a></li>
+            <li><a  class="nav-item" href="#">Navegar por Idiomas</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <div class="film">
+        <div class="infos">
+            <div class="logo">
+                <img class="previewModal--player-titleTreatment-logo" alt="Suits" title="Suits" src="https://occ-0-7433-3852.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABUxqRxbIpeofu_nIhfdP3j0DJsWGBFpDvpovs_WMGpSHtUmDED46_L9dH8JCFwGLLMHJHr7pJBKWE1x0_YMTwY1wpgBU2lZ22mroXLiUev4.webp?r=1a9" style="width: 100%; opacity: 1;">
+            </div>
+            <p>Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma.</p>
+            <div class="botoes">
+                <button class="assistir"><i class="fa-sharp fa-solid fa-play"></i>Assistir</button>
+            </div>
+        </div>
+        <div class="bg">
+        </div>
+        <div class="img-bg"></div>
+    </div>
+
+    <div class="catalog">
+        <h2>Recém adicionados</h2>
+        <span onclick="prevSlide()"id="left-arrow" class="arrow">‹</span>
+        <span onclick="proxSlide()" id="right-arrow" class="arrow">›</span>
+        <section class="slider">
+        <div class="slider-content">
+            <div class="slider primeiro">
+                <img src="https://occ-0-836-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ0Ni5vIOiA9JaTy-1gX7hgfuKXKzRadKyuHSlU4EBqRyIQawHSYePb3V408Fk2EHfyLzT4jnKDMoAS5G5heF1C2Ccr1q1HL1OpxTzB0FbpfSxw0W5k-0Y7_x7eANRaEATdh.jpg?r=c53">
+                <img src="https://occ-0-836-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQBXnB-1VoBSOn2DoIc32M-UB5DjeogmrkNN3Ouu4P_N9ku2wx9afJ7XRhCdAsBk75AAQWjZZkTLujhbZSMRR0XWw1N0fBM2uJBgnA21oJNZ_P9sJlRDDhlItJKdMj3cayhg.jpg?r=fcc">
+                <img src="https://occ-0-836-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRCJjxkmePgcCY-3XZ0dyoVFN7ZEGAAy1f__A1NbrGOKDBCCW3jSr2dsND3Bmf9UtRnO7jJLlqokT7ry_x_AL_uUrFIlFeKxvYmD-Rb4QskNtWjOWhosFKRiDDDhF2UAVl_4.jpg?r=29e">
+                <img src="https://occ-0-836-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRRhT8X5HgXAkmv4TEoABBxOXXRqqL04YfOS5Wvk1jAsQo1asy8lxjqlaLyz6suzggmOGcAp8YiSzuRNf4MZng1IoBE3NCiCMejWIPoCIoZ9c6SpnkNiqkT6aT0pLpIfFcUU.jpg?r=37c">
+                <img src="https://occ-0-836-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQHcGv3fOXKi9ATPzCI0i6g1OE-xqg0vWAF4r3vVQHZ6gwS2zSdS4jYiof27aTVhjD2Gs0cceXTNAjE5zjjqY7ZAMIiygPEvwoC9a8ug9799lDuVIHHW480T3T1EVhm-yfylM1nzFhoKXzsDgvRr7k1RByIE1-HHkwPYM6_qh8wLrNNa2AUg17q1ZTSZVhxrZADfuITlq4XkhxJdNMj2w6rn9PmMxlWIhMJI45gP1vf7Xms6qN8xN6fYox8ehsdb7vKtYLlB9cc0aKfoaiOVOJWguNgO-TVmI8Crbx5QXkXEWR14VQhUztXm2sgTpzrjWiTuAYsvQIca5xKb9AesBLeDJrWa4GQDMNpJmfFk7l6E7VH5g84.jpg?r=8cd">
+            </div>
+            <div class="slider">
+                <img src="https://occ-0-7433-3852.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABViRdVfryoqQIfgtu2_AfjhWweZcQXc2CGYIucUq6_UyH7gs22Y4Voe_oaZo6_dbgIH8y8vFhyqd1fGa7C8tGP0pycpcK5qem1sY2dP-jPCvisD6b6aC7VslGEqL_G_2toYu.jpg?r=c90">
+                <img src="https://occ-0-7433-3852.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVqvCYs_EFR-gliGP_HBiEUGHKMEUUNHhXcQ5ecXnqKuPDSmkreF3Eq0MDMM4OVp01HPK-RfvcF52e-nXN29DQ9MNoqSJpEJD-fxnxKvQvmouESsKLC12-YXm3kAMxy9EgP2.jpg?r=de4">
+                <img src="https://occ-0-7433-3852.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWAFDX3CVtn0sQKMvZuLe5Exk-aracvi6q97hTiabDj9tSQL_xgURmB1z_dy1R1wyfdRjptc0I_tp8xdt2X8ExN5PvDkrEQqou0.webp?r=dd6">
+                <img src="https://occ-0-7433-3852.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWn5o9OqJFTf27gFL8BC-Lh6JRPr4eldAyWizNM4HIjshIUNtn_hZpObGGvL1glOQbWKyEhjLC08qIdN4o225lHjjHjGedKfiy8.webp?r=864">
+                <img src="https://occ-0-7433-3852.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXBmoQlEZ7AYrjZKZfC1qm7LzE7cGjvLN2PlEx7CcC02DD8awguLTVOFNcmNX3-7ZAs1uCONWh8G6WbuylGC5qMUxaWOXf74c7Y.webp?r=8d5">
+            </div>
+        </div>
+        </section>
+    </div>
+    <div class="catalog">
+        <h2>Recém adicionados</h2>
+        <span onclick="prevSlide()"id="left-arrow" class="arrow">‹</span>
+        <span onclick="proxSlide()" id="right-arrow" class="arrow">›</span>
+        <section class="slider">
+        <div class="slider-content">
+            <div class="slider primeiro">
+                <img src="https://occ-0-836-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ0Ni5vIOiA9JaTy-1gX7hgfuKXKzRadKyuHSlU4EBqRyIQawHSYePb3V408Fk2EHfyLzT4jnKDMoAS5G5heF1C2Ccr1q1HL1OpxTzB0FbpfSxw0W5k-0Y7_x7eANRaEATdh.jpg?r=c53">
+                <img src="https://occ-0-836-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQBXnB-1VoBSOn2DoIc32M-UB5DjeogmrkNN3Ouu4P_N9ku2wx9afJ7XRhCdAsBk75AAQWjZZkTLujhbZSMRR0XWw1N0fBM2uJBgnA21oJNZ_P9sJlRDDhlItJKdMj3cayhg.jpg?r=fcc">
+                <img src="https://occ-0-836-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRCJjxkmePgcCY-3XZ0dyoVFN7ZEGAAy1f__A1NbrGOKDBCCW3jSr2dsND3Bmf9UtRnO7jJLlqokT7ry_x_AL_uUrFIlFeKxvYmD-Rb4QskNtWjOWhosFKRiDDDhF2UAVl_4.jpg?r=29e">
+                <img src="https://occ-0-836-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRRhT8X5HgXAkmv4TEoABBxOXXRqqL04YfOS5Wvk1jAsQo1asy8lxjqlaLyz6suzggmOGcAp8YiSzuRNf4MZng1IoBE3NCiCMejWIPoCIoZ9c6SpnkNiqkT6aT0pLpIfFcUU.jpg?r=37c">
+                <img src="https://occ-0-836-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQHcGv3fOXKi9ATPzCI0i6g1OE-xqg0vWAF4r3vVQHZ6gwS2zSdS4jYiof27aTVhjD2Gs0cceXTNAjE5zjjqY7ZAMIiygPEvwoC9a8ug9799lDuVIHHW480T3T1EVhm-yfylM1nzFhoKXzsDgvRr7k1RByIE1-HHkwPYM6_qh8wLrNNa2AUg17q1ZTSZVhxrZADfuITlq4XkhxJdNMj2w6rn9PmMxlWIhMJI45gP1vf7Xms6qN8xN6fYox8ehsdb7vKtYLlB9cc0aKfoaiOVOJWguNgO-TVmI8Crbx5QXkXEWR14VQhUztXm2sgTpzrjWiTuAYsvQIca5xKb9AesBLeDJrWa4GQDMNpJmfFk7l6E7VH5g84.jpg?r=8cd">
+            </div>
+            <div class="slider">
+                <img src="https://occ-0-7433-3852.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABViRdVfryoqQIfgtu2_AfjhWweZcQXc2CGYIucUq6_UyH7gs22Y4Voe_oaZo6_dbgIH8y8vFhyqd1fGa7C8tGP0pycpcK5qem1sY2dP-jPCvisD6b6aC7VslGEqL_G_2toYu.jpg?r=c90">
+                <img src="https://occ-0-7433-3852.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVqvCYs_EFR-gliGP_HBiEUGHKMEUUNHhXcQ5ecXnqKuPDSmkreF3Eq0MDMM4OVp01HPK-RfvcF52e-nXN29DQ9MNoqSJpEJD-fxnxKvQvmouESsKLC12-YXm3kAMxy9EgP2.jpg?r=de4">
+                <img src="https://occ-0-7433-3852.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWAFDX3CVtn0sQKMvZuLe5Exk-aracvi6q97hTiabDj9tSQL_xgURmB1z_dy1R1wyfdRjptc0I_tp8xdt2X8ExN5PvDkrEQqou0.webp?r=dd6">
+                <img src="https://occ-0-7433-3852.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWn5o9OqJFTf27gFL8BC-Lh6JRPr4eldAyWizNM4HIjshIUNtn_hZpObGGvL1glOQbWKyEhjLC08qIdN4o225lHjjHjGedKfiy8.webp?r=864">
+                <img src="https://occ-0-7433-3852.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXBmoQlEZ7AYrjZKZfC1qm7LzE7cGjvLN2PlEx7CcC02DD8awguLTVOFNcmNX3-7ZAs1uCONWh8G6WbuylGC5qMUxaWOXf74c7Y.webp?r=8d5">
+            </div>
+        </div>
+        </section>
+    </div>
+</body>
+</html>
